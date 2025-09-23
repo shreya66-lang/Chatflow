@@ -1,0 +1,23 @@
+<script>
+  const chatBox = document.getElementById("chat-box");
+  const form = document.getElementById("chat-form");
+  const userInput = document.getElementById("user-input");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const message = userInput.value;
+
+    chatBox.innerHTML += `<p class="user"><b>You:</b> ${message}</p>`;
+
+    const response = await fetch("http://127.0.0.1:8000/generate_response", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user: "Shreya", message })
+    });
+
+    const data = await response.json();
+    chatBox.innerHTML += `<p class="ai"><b>AI:</b> ${data.response}</p>`;
+    chatBox.scrollTop = chatBox.scrollHeight;
+    userInput.value = "";
+  });
+</script>
