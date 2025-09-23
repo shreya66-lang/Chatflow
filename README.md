@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Messaging Assistant
 
 This project aims to build a generalized AI service that can generate context-aware responses for various messaging applications.
@@ -36,3 +37,7 @@ The API will be accessible at `http://127.0.0.1:8000`. You can test the basic en
 -   `main.py`: The main FastAPI application.
 -   `requirements.txt`: Python dependencies.
 -   `README.md`: This file. 
+=======
+# Chatflow
+The Chatflow Project is an AI-powered conversational system that connects a Hugging Face model with a FastAPI backend and a modern frontend interface. The main goal is to enable natural, ChatGPT-like interactions with both short-term conversation history and long-term memory of user details.  
+>>>>>>> f1ca094eadeab155f5e46e6cb3670caf49a42401
