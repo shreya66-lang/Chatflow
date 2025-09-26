@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<< 
 # AI Messaging Assistant
 
 This project aims to build a generalized AI service that can generate context-aware responses for various messaging applications.
